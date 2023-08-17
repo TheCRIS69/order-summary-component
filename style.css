@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+:root {
+    /* COLORS */
+
+    --clr-primary-Pale-Blue: hsl(225, 100%, 94%);
+    --clr-primary-Bright-Blue: hsl(245, 75%, 52%);
+    --clr-primary-Bright-Purple: hsl(245, 48%, 52%);
+
+    --clr-neutral-Very-Pale-Blue: hsl(225, 100%, 98%);
+    --clr-neutral-Desaturated-Blue: hsl(224, 23%, 55%);
+    --clr-neutral-Dark-Blue: hsl(223, 47%, 23%);
+
+    /* FONTS */
+    --ff-main: 'Red Hat Display', sans-serif;
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+}
+
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body {
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      font-family: var(--ff-main);
+ }
+ 
+ @media (max-width: 375px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        margin: 0 1.5rem;
+    }
+ }
+
+
+.flex-center {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 410px;
+    background-color: var(--clr-neutral-Very-Pale-Blue);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.summary-section {
+    margin: 1.875rem;
+}
+
+.summary-section__title {
+    text-align: center;
+    color: var(--clr-neutral-Dark-Blue);
+    font-weight: var(--fw-900);
+}
+
+.summary-section__description {
+    text-align: center;
+    color: var(--clr-neutral-Desaturated-Blue);
+    font-weight: var(--fw-500);
+    margin-top: .5rem;
+}
+
+.subscription-plan {
+    background-color: var(--clr-primary-Pale-Blue);
+    display: flex;
+    justify-content: space-between;
+    border-radius: .5rem;
+    margin: -1rem 1.875rem 0 1.875rem;
+    padding: 1rem;
+}
+
+.subscription-plan__flex-group {
+    display: flex;
+    gap: 1rem;
+
+}
+.subscription-plan__type {
+    color: var(--clr-neutral-Dark-Blue);
+    font-weight: var(--fw-700);
+
+}
+.subscription-plan__price {
+    color: var(--clr-neutral-Desaturated-Blue);
+    font-weight: var(--fw-500);
+
+}
+
+.subscription-plan__change {
+    border: none;
+    background-color: inherit;
+    color: var(--clr-primary-Bright-Blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.subscription-plan__change:hover {
+    color: var(--clr-primary-Bright-Purple);
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1.875rem;
+    gap: 1rem;
+}
+
+.button-confirm, .button-cancel {
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+.button-confirm {
+    background-color: var(--clr-primary-Bright-Blue);
+    color: var(--clr-primary-Pale-Blue);
+}
+.button-confirm:hover {
+    background-color: var(--clr-primary-Bright-Purple);
+}
+
+.button-cancel {
+    background-color: inherit;
+    color: var(--clr-neutral-Desaturated-Blue);
+}
+.button-cancel:hover {
+    color: var(--clr-neutral-Dark-Blue);
+
+}

@@ -7,13 +7,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-<main>
+<main class="flex-center">
 
-<section class="flex-container">
+<section class="container">
 
 <img src="./images/illustration-hero.svg" alt="A guy listening to music at headphones"> 
 
@@ -23,9 +24,15 @@
 </div>
 
 <div class="subscription-plan">
-  <img src="./images/icon-music.svg">
-  <h2 class="subscription-plan__type">Annual Plan</h2>
-  <p class="subscription-plan__price">$59.99/year</p>
+  <div class="subscription-plan__flex-group">
+     <img src="./images/icon-music.svg">
+
+  <div>
+     <h4 class="subscription-plan__type">Annual Plan</h4>
+     <p class="subscription-plan__price">$59.99/year</p>
+  </div>
+
+  </div>
   <button class="subscription-plan__change">Change</button>
 </div>  
 
