@@ -95,6 +95,7 @@
     color: var(--clr-neutral-Desaturated-Blue);
     font-weight: var(--fw-500);
     margin-top: .5rem;
+    line-height: 1.7;
 }
 
 .subscription-plan {
@@ -102,7 +103,7 @@
     display: flex;
     justify-content: space-between;
     border-radius: 1rem;
-    margin: -1rem 1.875rem 0 1.875rem;
+    margin: 0 1.875rem 0 1.875rem;
     padding: 1rem;
 }
 
