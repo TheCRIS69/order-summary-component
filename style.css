@@ -51,6 +51,7 @@
       background-image: url(./images/pattern-background-desktop.svg);
       background-color: var(--clr-primary-Pale-Blue);
       background-repeat: no-repeat;
+      background-size: contain;
       font-family: var(--ff-main);
  }
  
