@@ -7,7 +7,7 @@
 
     --clr-primary-Pale-Blue: hsl(225, 100%, 94%);
     --clr-primary-Bright-Blue: hsl(245, 75%, 52%);
-    --clr-primary-Bright-Purple: hsl(245, 48%, 52%);
+    --clr-primary-Dark-Purple: hsl(245, 48%, 52%);
 
     --clr-neutral-Very-Pale-Blue: hsl(225, 100%, 98%);
     --clr-neutral-Desaturated-Blue: hsl(224, 23%, 55%);
@@ -19,7 +19,6 @@
     --fw-500: 500;
     --fw-700: 700;
     --fw-900: 900;
-
 }
 
 
@@ -50,17 +49,21 @@
 
   body {
       background-image: url(./images/pattern-background-desktop.svg);
+      background-color: var(--clr-primary-Pale-Blue);
       background-repeat: no-repeat;
       font-family: var(--ff-main);
  }
  
- @media (max-width: 375px) {
+ @media (max-width: 450px) {
     body {
-        background-image: url(./images/pattern-background-mobile.svg);
         margin: 0 1.5rem;
     }
- }
-
+}
+@media (max-width: 375px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
 
 .flex-center {
     min-height: 100vh;
@@ -98,7 +101,7 @@
     background-color: var(--clr-primary-Pale-Blue);
     display: flex;
     justify-content: space-between;
-    border-radius: .5rem;
+    border-radius: 1rem;
     margin: -1rem 1.875rem 0 1.875rem;
     padding: 1rem;
 }
@@ -110,7 +113,7 @@
 }
 .subscription-plan__type {
     color: var(--clr-neutral-Dark-Blue);
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-900);
 
 }
 .subscription-plan__price {
@@ -123,12 +126,14 @@
     border: none;
     background-color: inherit;
     color: var(--clr-primary-Bright-Blue);
+    font-size: 0.9rem;
     text-decoration: underline;
     cursor: pointer;
+    font-weight: var(--fw-700);
 }
 
 .subscription-plan__change:hover {
-    color: var(--clr-primary-Bright-Purple);
+    color: var(--clr-primary-Dark-Purple);
 }
 
 .buttons-section {
@@ -141,15 +146,16 @@
 .button-confirm, .button-cancel {
     border: none;
     border-radius: .5rem;
-    padding: .5rem;
+    padding: .8rem;
     cursor: pointer;
+    font-weight: var(--fw-700);
 }
 .button-confirm {
     background-color: var(--clr-primary-Bright-Blue);
     color: var(--clr-primary-Pale-Blue);
 }
 .button-confirm:hover {
-    background-color: var(--clr-primary-Bright-Purple);
+    background-color: var(--clr-primary-Dark-Purple);
 }
 
 .button-cancel {
